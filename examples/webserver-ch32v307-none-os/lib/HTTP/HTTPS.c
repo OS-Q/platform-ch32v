@@ -33,7 +33,7 @@ Login_Cfg Login_CfgBuf = (Login_Cfg)loginbuf;
 /*Default configuration of WCHNET network parameters*/
 u8 Basic_Default[BASIC_CFG_LEN] = {
 0x57, 0xAB,
-01, 02, 03, 04, 05, 06, 192, 168, 0, 10, 255, 255, 255, 0, 192, 168, 0, 1};
+01, 02, 03, 04, 05, 06, 192, 168, 1, 10, 255, 255, 255, 0, 192, 168, 1, 1};
 
 /*WCHNET login default parameters, user name and password*/
 u8 Login_Default[LOGIN_CFG_LEN] = {
@@ -43,7 +43,7 @@ u8 Login_Default[LOGIN_CFG_LEN] = {
 /*WCHNET default port configuration*/
 u8 Port_Default[PORT_CFG_LEN] = {
 0x57, 0xAB,
-MODE_TCPCLIENT, 1000 / 256, 1000 % 256, 192, 168, 0, 100, 1000 / 256, 1000 % 256 };
+MODE_TCPCLIENT, 1000 / 256, 1000 % 256, 192, 168, 1, 9, 1000 / 256, 1000 % 256 };
 
 u8 *name;                                               //The name of the web page requested by HTTP
 u8 socket;                                              //socket id
